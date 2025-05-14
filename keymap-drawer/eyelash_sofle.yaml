@@ -68,10 +68,10 @@ layers:
   Modeling:
   - '~'
   - '&Move'
-  - F2
-  - F3
-  - F4
-  - F5
+  - '&Rotate'
+  - '&Scale'
+  - '&Copy'
+  - '&scale1d'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
@@ -80,9 +80,9 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&Mirror'
+  - '&Join'
+  - '&Offset'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - I
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
