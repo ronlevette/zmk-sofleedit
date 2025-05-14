@@ -58,13 +58,72 @@
             bindings = <&kp ENTER>;
             key-positions = <31 30>;
         };
+
+        rgbon {
+            bindings = <&rgb_ug RGB_ON>;
+            key-positions = <0 1 2>;
+        };
+
+        cream {
+            bindings = <&rgb_ug RGB_COLOR_HSB(44,100,91)>;
+            key-positions = <1 3 2>;
+        };
     };
 
     macros {
-        new_macro: new_macro {
+        Move: Move {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp M &kp O &kp V &kp E &kp ENTER>;
+            label = "MOVE";
+        };
+
+        Rotate: Rotate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp O &kp T &kp A &kp T &kp E &kp RET>;
+            label = "ROTATE";
+        };
+
+        Scale: Scale {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp A &kp L &kp E &kp RET>;
+            label = "SCALE";
+        };
+
+        Copy: Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp P &kp Y &kp RET>;
+            label = "COPY";
+        };
+
+        scale1d: scale1d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp A &kp L &kp E &kp N1 &kp D &kp RET>;
+            label = "SCALE1D";
+        };
+
+        Mirror: Mirror {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp I &kp R &kp R &kp O &kp R &kp RET>;
+            label = "MIRROR";
+        };
+
+        Join: Join {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp O &kp I &kp N &kp RET>;
+            label = "JOIN";
+        };
+
+        Offset: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp F &kp F &kp S &kp E &kp T &kp RET>;
             label = "NEW_MACRO";
         };
     };
@@ -87,11 +146,11 @@
 
         modeling {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp TILDE   &Move      &kp F2  &kp F3  &kp F4                    &kp F5                       &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&none       &none      &none   &none   &none                     &kp I                        &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&none       &kp TILDE  &none   &none   &none                     &kp RG(LS(S))                &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none       &none      &none   &none   &kp LS(LC(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&kp C_MUTE  &trans     &trans  &trans  &trans                    &trans                       &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "Modeling";
@@ -123,11 +182,11 @@
 
         cat {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &to 0   &trans  &trans  &trans  &trans
+&none   &none   &none   &none   &none   &none     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1    &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1    &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1    &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1    &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
             >;
         };
     };
