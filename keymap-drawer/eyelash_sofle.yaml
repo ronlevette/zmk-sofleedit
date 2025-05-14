@@ -66,8 +66,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - {t: Gaming, h: toggle}
   Modeling:
-  - {t: '`', s: '~'}
-  - F1
+  - '~'
+  - '&Move'
   - F2
   - F3
   - F4
@@ -79,12 +79,12 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - I
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - END
@@ -92,12 +92,12 @@ layers:
   - HOME
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
-  - '&mkp MB5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - Gui+Sft+S
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - $$mdi:arrow-left-bold$$
@@ -105,12 +105,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
-  - RGB EFF
-  - RGB EFR
-  - RGB SPI
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Sft+Ctl+[', s: 'Sft+Ctl+{'}
+  - {t: 'Ctl+Sft+]', s: 'Ctl+Sft+}'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB BRI
   - RGB BRD
@@ -261,70 +261,70 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   cat:
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Generic, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
+  - {t: '1', s: '!'}
 combos:
 - p: [29, 30]
   k: {t: Modeling, h: '$$mdi:gesture-tap-hold$$'}
@@ -334,3 +334,7 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [31, 30]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [0, 1, 2]
+  k: RGB ON
+- p: [1, 3, 2]
+  k: RGB COLOR HSB(44,100,91)
