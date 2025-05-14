@@ -36,6 +36,24 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Mo1 {
+            bindings = <&mo 1>;
+            key-positions = <29 30>;
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
