@@ -177,11 +177,11 @@
 
         Lighting {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &kp LA(LC(NUMBER_0))  &kp LA(LC(NUMBER_9))  &none            &none            &none             &none  &none  &none  &none  &none  &none  &none
+&none  &kp LA(LC(F6))        &kp LA(LC(F12))       &kp LA(LC(F11))  &kp LA(LC(F10))  &kp LA(LC(F7))    &none  &none  &none  &none  &none  &none  &none
+&none  &kp LA(LC(F2))        &kp LA(LC(F4))        &kp LC(LA(F1))   &none            &none             &none  &none  &none  &none  &none  &none  &none
+&none  &none                 &none                 &none            &none            &none             &none  &none  &none  &none  &none  &none  &none
+&none  &none                 &none                 &none            &none            &none             &none  &none  &none  &none  &none  &none
             >;
         };
 
