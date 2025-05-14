@@ -32,9 +32,22 @@
     };
 
     behaviors {
-        set_color: set_color {
+        layer0_color: set_color {
             compatible = "zmk,behavior-color";
-            label = "Set Layer Color";
+            label = "Layer 0 RGB";
+            color = <255 255 255>;
+        };
+
+        layer1_color: set_color {
+            compatible = "zmk,behavior-color";
+            label = "Layer 1 RGB";
+            color = <0 0 255>;
+        };
+
+        layer2_color: set_color {
+            compatible = "zmk,behavior-color";
+            label = "Layer 2 RGB";
+            color = <255 0 0>;
         };
     };
 
@@ -43,7 +56,7 @@
 
         generic {
             bindings = <
-                &set_color RGB_WHITE
+                &layer0_color
                 &kp ESC     &kp N1  &kp N2      &kp N3     &kp N4        &kp N5              &kp UP_ARROW     &kp N6         &kp N7     &kp N8           &kp N9           &kp N0    &kp EQUAL
                 &kp TAB     &kp Q   &kp W       &kp E      &kp R         &kp T               &kp DOWN_ARROW   &kp Y          &kp U      &kp I            &kp O            &kp P     &kp SINGLE_QUOTE
                 &kp CAPS    &kp A   &kp S       &kp D      &kp F         &kp G               &kp LEFT_ARROW   &kp H          &kp J      &kp K            &kp L            &kp SEMI  &kp ENTER
@@ -57,7 +70,7 @@
 
         modeling {
             bindings = <
-                &set_color RGB_BLUE
+                &layer1_color
                 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
                 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
                 &trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
@@ -71,7 +84,7 @@
 
         gaming {
             bindings = <
-                &set_color RGB_RED
+                &layer2_color
                 &kp ESC     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8           &kp N9           &kp N0    &kp EQUAL
                 &kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I            &kp O            &kp P     &kp SINGLE_QUOTE
                 &kp CAPS    &kp A         &kp S         &kp D         &kp F         &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K            &kp L            &kp SEMI  &kp ENTER
@@ -89,8 +102,4 @@
                 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-    };
-};
+                &trans  &trans  &
