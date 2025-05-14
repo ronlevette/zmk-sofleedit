@@ -198,10 +198,10 @@ layers:
   Lighting:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+Ctl+0
-  - Alt+Ctl+9
+  - {t: Alt+Ctl+9, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -340,3 +340,5 @@ combos:
   k: RGB OFF
 - p: [27, 28, 29, 30]
   k: {t: Generic, h: toggle}
+- p: [2, 5]
+  k: {t: Lighting, h: '$$mdi:gesture-tap-hold$$'}
