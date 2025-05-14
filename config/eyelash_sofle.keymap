@@ -146,11 +146,11 @@
 
         modeling {
             bindings = <
-&kp TILDE   &Move      &kp F2  &kp F3  &kp F4                    &kp F5                       &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&none       &none      &none   &none   &none                     &kp I                        &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&none       &kp TILDE  &none   &none   &none                     &kp RG(LS(S))                &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none       &none      &none   &none   &kp LS(LC(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans     &trans  &trans  &trans                    &trans                       &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp TILDE   &Move      &Rotate  &Scale   &Copy                     &scale1d                     &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&none       &Mirror    &Join    &Offset  &none                     &kp I                        &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&none       &kp TILDE  &none    &none    &none                     &kp RG(LS(S))                &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none       &none      &none    &none    &kp LS(LC(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&kp C_MUTE  &trans     &trans   &trans   &trans                    &trans                       &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "Modeling";
