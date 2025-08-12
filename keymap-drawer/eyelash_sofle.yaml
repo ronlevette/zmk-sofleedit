@@ -342,3 +342,5 @@ combos:
   k: {t: Generic, h: toggle}
 - p: [2, 5]
   k: {t: Lighting, h: '$$mdi:gesture-tap-hold$$'}
+- p: [26, 13, 0]
+  k: {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
